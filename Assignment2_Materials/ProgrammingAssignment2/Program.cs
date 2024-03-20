@@ -34,6 +34,19 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				int numCount = 0;
+				int sumCount = 0;
+				int valStore = GetValue();
+				float meanStore = 
+				// ^^^ Declared Variables
+
+				while (valStore != -1)
+				{
+					numCount++;
+					valStore++;
+					valStore = GetValue();
+				}
+				
 
 
 				// Don't add or modify any code below
