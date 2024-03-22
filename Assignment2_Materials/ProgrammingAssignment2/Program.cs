@@ -37,21 +37,30 @@ namespace ProgrammingAssignment2
 				int numCount = 0;
 				int sumCount = 0;
 				int valStore = GetValue();
-				float meanStore = 
+				float meanStore = 0f;
 				// ^^^ Declared Variables
 
 				while (valStore != -1)
 				{
 					numCount++;
-					valStore++;
-					valStore = GetValue();
-				}
-				
+					sumCount = sumCount + valStore;
+                    valStore = GetValue();
+                  
+                }
 
+				// ^^^ This while Loop increments numCount and the adds the number to itself
 
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+                if (numCount > 0)
+                {
+                    meanStore = (float)sumCount / numCount;
+                }
+				Console.WriteLine(numCount + " " + meanStore);
+
+                // ^^^ This part get the numbers and calculates the mean
+
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
